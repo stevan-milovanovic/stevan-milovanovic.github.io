@@ -2,195 +2,159 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>stevan-milovanovic — Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Stevan Milovanovic — Projects</title>
+        <meta
+            name="description"
+            content="Android projects portfolio focusing on clean architecture, AI, and CI/CD practices." />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-        <style>
-            :root {
-                --bg: #0f1724;
-                --card: #0b1220;
-                --muted: #9aa4b2;
-                --accent: #66d9ff;
-                --glass: rgba(255, 255, 255, 0.03);
-            }
-            html,
-            body {
-                height: 100%;
-                margin: 0;
-                background: linear-gradient(180deg, #071026 0%, #081626 60%);
-                color: #e6eef6;
-                font-family:
-                    Inter,
-                    system-ui,
-                    Segoe UI,
-                    Roboto,
-                    Helvetica,
-                    Arial;
-            }
-            .site {
-                max-width: 1100px;
-                margin: 36px auto;
-                padding: 28px;
-            }
-            header {
-                display: flex;
-                align-items: center;
-                gap: 20px;
-                margin-bottom: 20px;
-            }
-            .logo {
-                width: 72px;
-                height: 72px;
-                border-radius: 12px;
-                background: linear-gradient(135deg, var(--accent), #7afcff);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #022;
-                font-weight: 700;
-                font-size: 28px;
-            }
-            h1 {
-                margin: 0;
-                font-size: 20px;
-            }
-            p.lead {
-                margin: 4px 0 0;
-                color: var(--muted);
-            }
-            .grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-                gap: 18px;
-                margin-top: 18px;
-            }
-            .card {
-                background: var(--card);
-                border-radius: 12px;
-                padding: 12px;
-                box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
-                transition:
-                    transform 0.18s ease,
-                    box-shadow 0.18s ease;
-                overflow: hidden;
-                display: flex;
-                flex-direction: column;
-            }
-            .card:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 18px 40px rgba(2, 6, 23, 0.6);
-            }
-            .thumb {
-                height: 140px;
-                overflow: hidden;
-                border-radius: 8px;
-                background: var(--glass);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-bottom: 10px;
-            }
-            .thumb img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-            }
-            .meta h3 {
-                margin: 0;
-                font-size: 16px;
-            }
-            .meta a {
-                color: #e6faff;
-                text-decoration: none;
-            }
-            .desc {
-                color: var(--muted);
-                font-size: 13px;
-                margin: 8px 0 10px;
-            }
-            .stats {
-                font-size: 12px;
-                color: var(--muted);
-            }
-            footer {
-                margin-top: 28px;
-                color: var(--muted);
-                font-size: 13px;
-            }
-            @media (max-width: 540px) {
-                .thumb {
-                    height: 110px;
-                }
-            }
-        </style>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="src/style.css" />
     </head>
+
     <body>
-        <div class="site">
-            <header>
-                <div class="logo">SM</div>
-                <div>
-                    <h1>stevan-milovanovic — Pinned Projects</h1>
-                    <p class="lead">
-                        A curated showcase built from your pinned repositories. Screenshots are pulled from each repo
-                        README when available.
-                    </p>
-                </div>
-            </header>
+        <header>
+            <h1>Stevan Milovanovic — GitHub Portfolio</h1>
+            <p>
+                Projects showcase, focusing on modern architecture, clean code, practical use of AI in mobile
+                applications and CI/CD practices.
+            </p>
+        </header>
 
-            <main>
-                <section class="grid">
-                    <article class="card">
-      <div class="thumb"><img src="assets/Speak2Act.png" alt="Speak2Act screenshot"></div>
-      <div class="meta">
-        <h3><a href="https://github.com/stevan-milovanovic/Speak2Act" target="_blank" rel="noopener">Speak2Act</a></h3>
-        <p class="desc">Android app that records speech and uses Firebase AI Logic (Gemini) to summarize spoken input into structured transaction instructions.</p>
-        <p class="stats">⭐ 3 • 🍴 0 • Kotlin</p>
-      </div>
-    </article>
-<article class="card">
-      <div class="thumb"><img src="assets/LiteRT-for-Android.png" alt="LiteRT-for-Android screenshot"></div>
-      <div class="meta">
-        <h3><a href="https://github.com/stevan-milovanovic/LiteRT-for-Android" target="_blank" rel="noopener">LiteRT-for-Android</a></h3>
-        <p class="desc">Image Classification, Image Captioning and LLM inference with LiteRT</p>
-        <p class="stats">⭐ 14 • 🍴 4 • Kotlin</p>
-      </div>
-    </article>
-<article class="card">
-      <div class="thumb"><img src="assets/Tasty.png" alt="Tasty screenshot"></div>
-      <div class="meta">
-        <h3><a href="https://github.com/stevan-milovanovic/Tasty" target="_blank" rel="noopener">Tasty</a></h3>
-        <p class="desc">Tasty Android App</p>
-        <p class="stats">⭐ 1 • 🍴 0 • Kotlin</p>
-      </div>
-    </article>
-<article class="card">
-      <div class="thumb"><img src="assets/premier-league.png" alt="premier-league screenshot"></div>
-      <div class="meta">
-        <h3><a href="https://github.com/stevan-milovanovic/premier-league" target="_blank" rel="noopener">premier-league</a></h3>
-        <p class="desc">Android project architecture showcase</p>
-        <p class="stats">⭐ 2 • 🍴 1 • Kotlin</p>
-      </div>
-    </article>
-<article class="card">
-      <div class="thumb"><img src="assets/Chuck-Norris-Jokes.png" alt="Chuck-Norris-Jokes screenshot"></div>
-      <div class="meta">
-        <h3><a href="https://github.com/stevan-milovanovic/Chuck-Norris-Jokes" target="_blank" rel="noopener">Chuck-Norris-Jokes</a></h3>
-        <p class="desc">Example project for Master CI/CD for Android Developers Course</p>
-        <p class="stats">⭐ 1 • 🍴 0 • Kotlin</p>
-      </div>
-    </article>
-                </section>
-            </main>
+        <main>
+            <section class="grid">
+                <article class="card">
+                    <img src="assets/Speak2Act.png" alt="Speak2Act Android app preview" loading="lazy" />
+                    <div class="card-content">
+                        <h3>
+                            <a
+                                href="https://github.com/stevan-milovanovic/Speak2Act"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Speak2Act
+                            </a>
+                        </h3>
+                        <p>
+                            Android application that records speech, processes it using Firebase AI Logic (Gemini), and
+                            transforms spoken input into structured, actionable instructions. Demonstrates serverless
+                            workflows, voice-to-action pipelines, and clean Android architecture.
+                        </p>
+                        <div class="meta">
+                            <span class="badge">Kotlin</span>
+                            <span>⭐ 3</span>
+                        </div>
+                    </div>
+                </article>
 
-            <footer>
-                <p>
-                    Updated:
-                    2026-02-08T13:00:05.712Z
-                </p>
-                <p><a href="https://github.com/stevan-milovanovic" style="color: var(--accent)">View on GitHub</a></p>
-            </footer>
-        </div>
+                <article class="card">
+                    <img
+                        src="assets/LiteRT-for-Android.png"
+                        alt="LiteRT on-device machine learning preview"
+                        loading="lazy" />
+                    <div class="card-content">
+                        <h3>
+                            <a
+                                href="https://github.com/stevan-milovanovic/LiteRT-for-Android"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Cats vs Dogs
+                            </a>
+                        </h3>
+                        <p>
+                            Exploration of on-device machine learning using LiteRT, including image classification,
+                            image captioning, and local LLM inference. Focuses on performance, model integration, and
+                            efficient mobile inference pipelines.
+                        </p>
+                        <div class="meta">
+                            <span class="badge">Kotlin</span>
+                            <span>⭐ 14</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/Tasty.png" alt="Tasty Android application preview" loading="lazy" />
+                    <div class="card-content">
+                        <h3>
+                            <a
+                                href="https://github.com/stevan-milovanovic/Tasty"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Tasty
+                            </a>
+                        </h3>
+                        <p>
+                            A modern Android application showcasing clean UI design, smooth user interactions, and
+                            modular architecture. Emphasizes best practices for scalability, maintainability, and a
+                            polished end-user experience.
+                        </p>
+                        <div class="meta">
+                            <span class="badge">Kotlin</span>
+                            <span>⭐ 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/premier-league.png" alt="Premier League Android project preview" loading="lazy" />
+                    <div class="card-content">
+                        <h3>
+                            <a
+                                href="https://github.com/stevan-milovanovic/premier-league"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Premier League
+                            </a>
+                        </h3>
+                        <p>
+                            Android project demonstrating application architecture patterns, structured data handling,
+                            and separation of concerns. Designed as a reference for building scalable, testable Android
+                            applications.
+                        </p>
+                        <div class="meta">
+                            <span class="badge">Kotlin</span>
+                            <span>⭐ 2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        src="assets/Chuck-Norris-Jokes.png"
+                        alt="Chuck Norris jokes Android app preview"
+                        loading="lazy" />
+                    <div class="card-content">
+                        <h3>
+                            <a
+                                href="https://github.com/stevan-milovanovic/Chuck-Norris-Jokes"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Chuck Norris Jokes
+                            </a>
+                        </h3>
+                        <p>
+                            Example Android project created for CI/CD setup practice. Demonstrates automated pipelines,
+                            testing strategies, and delivery workflows while keeping the app logic simple and focused.
+                        </p>
+                        <div class="meta">
+                            <span class="badge">Kotlin</span>
+                            <span>⭐ 1</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <a href="https://github.com/stevan-milovanovic" target="_blank" rel="noopener noreferrer">
+                View on GitHub
+            </a>
+        </footer>
     </body>
 </html>
